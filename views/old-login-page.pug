@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+    p Login #{title}
+    form(action='/loging', method='post')
+
+        input(required='', type='email', name='email', placeholder='Your email')
+        input(required='', type='password', name='password', placeholder='Enter a password')
+        p
+        input(type='submit', value='Login')

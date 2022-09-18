@@ -1,0 +1,95 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title SaaS Tutorial English Audio Books
+        // Custom fonts for this template
+        link(href='vendor/fontawesome-free/css/all.min.css', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        // Custom styles for this template
+        link(href='css/sb-admin-2.min.css', rel='stylesheet')
+    body#page-top
+        // Page Wrapper
+        #wrapper
+            // Sidebar
+            ul#accordionSidebar.navbar-nav.bg-gradient-primary.sidebar.sidebar-dark.accordion
+                // Sidebar - Brand
+                a.sidebar-brand.d-flex.align-items-center.justify-content-center(href='index.html')
+                    .sidebar-brand-icon.rotate-n-15
+                        i.fas.fa-laugh-wink
+                    .sidebar-brand-text.mx-3 Talking Libro
+                // Divider
+                hr.sidebar-divider.my-0
+                // Nav Item - Dashboard
+                li.nav-item
+                    a.nav-link(href='/EnglishBooks')
+                        i.fas.fa-fw.fa-arrow-left
+                        span Back
+                // Sidebar Toggler (Sidebar)
+                .text-center.d-none.d-md-inline
+                    button#sidebarToggle.rounded-circle.border-0
+            // End of Sidebar
+            // Content Wrapper
+            #content-wrapper.d-flex.flex-column
+                // Main Content
+                #content
+                    // Begin Page Content
+                    .container-fluid
+                        // Page Heading
+                        h.h3.mt-3.mb-4.text-gray-800 English Audio Books
+                        br
+                        i.nav-item
+                            a.nav-link(href='/WoodyWood')
+                                hr
+                                h2.i.fas.fa-hand-point-right.h2.h3.mt-3.mb-4  Woody Woodpecker and His Friends
+                                br
+                        i.nav-item
+                            a.nav-link(href='/notReleased')
+                                hr
+                                h2.i.fas.fa-hand-point-right.h2.h3.mt-3.mb-4  Clifford’s Bedtime Story Box
+                                br
+                                hr
+                                h2.i.fas.fa-hand-point-right.h2.h3.mt-3.mb-4  Christmas (12 Board Books)
+                                br
+                                hr
+                                h2.i.fas.fa-hand-point-right.h2.h3.mt-3.mb-4  The Night Before Christmas
+                                br
+                                hr
+                                h2.i.fas.fa-hand-point-right.h2.h3.mt-3.mb-4  Five Little Pumpkins
+
+                    // /.container-fluid
+                // End of Main Content
+                // Footer
+                footer.sticky-footer.bg-white
+                    .container.my-auto
+                        .copyright.text-center.my-auto
+                            span Copyright &copy; Talking Libro 2022
+                // End of Footer
+            // End of Content Wrapper
+        // End of Page Wrapper
+        // Scroll to Top Button
+        a.scroll-to-top.rounded(href='#page-top')
+            i.fas.fa-angle-up
+        // Logout Modal
+        #logoutModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h5#exampleModalLabel.modal-title Ready to Leave?
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body Select &quot;Logout&quot; below if you are ready to end your current session.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button', data-dismiss='modal') Cancel
+                        a.btn.btn-primary(href='login.html') Logout
+        // Bootstrap core JavaScript
+        script(src='vendor/jquery/jquery.min.js')
+        script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+        // Core plugin JavaScript
+        script(src='vendor/jquery-easing/jquery.easing.min.js')
+        // Custom scripts for all pages
+        script(src='js/sb-admin-2.min.js')

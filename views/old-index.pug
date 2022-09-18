@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action='/signup', method='post')
+
+    input(required='', type='email', name='email', placeholder='Your email')
+    input(required='', type='password', name='password', placeholder='Enter a password')
+    p
+    input(type='submit', value='Signup for a free trial')

@@ -1,0 +1,225 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title SaaS Tutorial Billing Page
+        // Custom fonts for this template
+        link(href='vendor/fontawesome-free/css/all.min.css', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        // Custom styles for this template
+        link(href='css/sb-admin-2.min.css', rel='stylesheet')
+        style.
+            body {
+                font-family: Arial;
+                font-size: 17px;
+                padding: 0px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .row {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+                margin: 0 -16px;
+            }
+
+            .col-25,
+            .col-50,
+            .col-75 {
+                padding: 0 16px;
+            }
+
+            .container {
+                background-color: #f2f2f2;
+                padding: 5px 20px 15px 20px;
+                border: 1px solid lightgrey;
+                border-radius: 3px;
+            }
+
+            input[type=text] {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            label {
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            .icon-container {
+                margin-bottom: 20px;
+                padding: 7px 0;
+                font-size: 24px;
+            }
+
+            .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 12px;
+                margin: 10px 0;
+                border: none;
+                width: 100%;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 17px;
+            }
+
+            .btn:hover {
+                background-color: #45a049;
+            }
+
+            a {
+                color: #2196F3;
+            }
+
+            hr {
+                border: 1px solid lightgrey;
+            }
+
+            span.price {
+                float: right;
+                color: grey;
+            }
+
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+            @media (max-width: 800px) {
+                .row {
+                    flex-direction: column-reverse;
+                }
+
+                .col-25 {
+                    margin-bottom: 0px;
+                }
+            }
+    body#page-top
+        // Page Wrapper
+        #wrapper
+            // Sidebar
+            ul#accordionSidebar.navbar-nav.bg-gradient-primary.sidebar.sidebar-dark.accordion
+                // Sidebar - Brand
+                a.sidebar-brand.d-flex.align-items-center.justify-content-center(href='index.html')
+                    .sidebar-brand-icon.rotate-n-15
+                        i.fas.fa-laugh-wink
+                    .sidebar-brand-text.mx-3 Talking Libro
+                // Divider
+                hr.sidebar-divider.my-0
+                // Nav Item - Dashboard
+                li.nav-item
+                    a.nav-link(href='/main')
+                        i.fas.fa-fw.fa-home
+                        span Home
+
+                li.nav-item
+                    a.nav-link(href='/SinhalaBooks')
+                        i.fas.fa-fw.fa-book-reader
+                        span Sinhala Audio Books
+                li.nav-item
+                    a.nav-link(href='/EnglishBooks')
+                        i.fas.fa-fw.fa-book-reader
+                        span English Audio Books
+                li.nav-item
+                    a.nav-link(href='/TamilBooks')
+                        i.fas.fa-fw.fa-book-reader
+                        span Tamil Audio Books
+
+                li.nav-item
+                    a.nav-link(href='/billing')
+                        i.fas.fa-fw.fa-headphones
+                        span Billing
+                li.nav-item
+                    a.nav-link(href='/logout')
+                        i.fas.fa-fw.fa-arrow-left
+                        span Logout
+                // Sidebar Toggler (Sidebar)
+                .text-center.d-none.d-md-inline
+                    button#sidebarToggle.rounded-circle.border-0
+            // End of Sidebar
+            // Content Wrapper
+            #content-wrapper.d-flex.flex-column
+                // Main Content
+                #content
+                    // Begin Page Content
+                    .container-fluid
+                        // Page Heading
+
+                        .col
+                            md
+                            .container
+                                form(action='/action_page.php')
+                                    .row
+                                        .col-50
+                                            br
+                                            h3 Subscribe Talking Libro
+                                            hr
+                                            i.fas.fa-hand-holding-usd FREE FOR 30DAYS
+                                            br
+                                            i.fas.fa-hand-holding-usd  500LKR For 6 Months
+                                            hr
+                                            label  Accepted Cards
+                                            .icon-container
+                                                i.fab.fa-cc-visa.fa-2x(style='color:navy;')
+                                                i.fab.fa-cc-amex.fa-2x(style='color:blue;')
+                                                i.fab.fa-cc-mastercard.fa-2x(style='color:red;')
+                                                i.fab.fa-cc-discover.fa-2x(style='color:orange;')
+                                            label(for='cname') Name on Card
+                                            input#cname(type='text', name='cardname', placeholder='')
+                                            label(for='ccnum') Credit card number
+                                            input#ccnum(type='text', name='cardnumber', placeholder='')
+                                            label(for='expmonth') Exp Month
+                                            input#expmonth(type='text', name='expmonth', placeholder='')
+                                            .row
+                                                .col-50
+                                                    label(for='expyear') Exp Year
+                                                    input#expyear(type='text', name='expyear', placeholder='')
+                                                .col-50
+                                                    label(for='cvv') CVV
+                                                    input#cvv(type='text', name='cvv', placeholder='')
+                                    label
+                                    a.nav-link(href='/main')
+
+                                        i.fas.fa-dollar-sign.fa-2x  SUBSCRIBE
+
+
+                    // /.container-fluid
+                // End of Main Content
+                // Footer
+                footer.sticky-footer.bg-white
+                    .container.my-auto
+                        .copyright.text-center.my-auto
+                            span Copyright &copy; Talking Libro 2022
+                // End of Footer
+            // End of Content Wrapper
+        // End of Page Wrapper
+        // Scroll to Top Button
+        a.scroll-to-top.rounded(href='#page-top')
+            i.fas.fa-angle-up
+        // Logout Modal
+        #logoutModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h5#exampleModalLabel.modal-title Ready to Leave?
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body Select &quot;Logout&quot; below if you are ready to end your current session.
+                    .modal-footer
+                        button.btn.btn-secondary(type='button', data-dismiss='modal') Cancel
+                        a.btn.btn-primary(href='login.html') Logout
+        // Bootstrap core JavaScript
+        script(src='vendor/jquery/jquery.min.js')
+        script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+        // Core plugin JavaScript
+        script(src='vendor/jquery-easing/jquery.easing.min.js')
+        // Custom scripts for all pages
+        script(src='js/sb-admin-2.min.js')
